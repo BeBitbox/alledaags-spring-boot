@@ -7,13 +7,13 @@ Your favorite website from daily random Stuff!
 This application needs a connection with a Dynamo DB. 
 Normally you should have received the credentials by e-mail.
 
-###Build
+### Build
 Only requirement is JDK11+ 
 ```shell script
 mvn clean install
 ```
 
-###Run the application
+### Run the application
 Only requirement is JDK11+ 
 ```shell script
 mvn spring-boot:run
