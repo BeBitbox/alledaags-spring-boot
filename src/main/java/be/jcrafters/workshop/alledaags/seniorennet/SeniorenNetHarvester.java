@@ -9,12 +9,11 @@ import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.time.Month;
 import java.util.Optional;
 
 import static be.jcrafters.workshop.alledaags.core.DailyItem.DailyItemBuilder.aDailyItem;
 
-//@Component
+@Component
 public class SeniorenNetHarvester implements Harvester {
     private static final Logger LOGGER = LoggerFactory.getLogger(SeniorenNetHarvester.class);
     public static final String TITLE = "Mopje";
