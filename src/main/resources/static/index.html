@@ -18,7 +18,13 @@
             Alledaags.be - uw dagelijkse portie willekeur
         </span>
 </nav>
+
 <div id="container" class="container" style="margin-top: 4rem">
+    <div id="spinner" class="text-center text-danger">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
     <div id="card-deck" class="card-columns">
 
     </div>
@@ -51,6 +57,7 @@
                         </div>
                     </div>`);
             });
+            $('#spinner').hide();
         });
     });
 </script>
