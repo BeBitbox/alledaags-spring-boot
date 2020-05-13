@@ -18,4 +18,4 @@ Only requirement is JDK11+
 ```shell script
 mvn spring-boot:run
 ```
-You can go to the webapplication on port 80 on your [localhost](http://localhost)
+You can go to the webapplication on port 8080 on your [localhost](http://localhost)
