@@ -1,4 +1,4 @@
-package be.jcrafters.workshop.alledaags.kapelletjes;
+package be.jcrafters.workshop.alledaags.harvesters.kapelletjes;
 
 import be.jcrafters.workshop.alledaags.core.DailyItem;
 import be.jcrafters.workshop.alledaags.core.Harvester;

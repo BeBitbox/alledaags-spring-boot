@@ -1,4 +1,4 @@
-package be.jcrafters.workshop.alledaags.actievandedag;
+package be.jcrafters.workshop.alledaags.harvesters.actievandedag;
 
 import be.jcrafters.workshop.alledaags.core.DailyItem;
 import be.jcrafters.workshop.alledaags.core.Harvester;

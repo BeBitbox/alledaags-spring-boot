@@ -1,4 +1,4 @@
-package be.jcrafters.workshop.alledaags.wikipedia;
+package be.jcrafters.workshop.alledaags.harvesters.wikipedia;
 
 import be.jcrafters.workshop.alledaags.core.DailyItem;
 import be.jcrafters.workshop.alledaags.core.Harvester;

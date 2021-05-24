@@ -5,6 +5,7 @@ import com.amazonaws.services.dynamodbv2.datamodeling.*;
 
 import java.time.Instant;
 import java.time.LocalDate;
+import java.util.Objects;
 
 @DynamoDBTable(tableName = "DailyItem")
 public class DynamoDailyItem {
@@ -108,5 +109,31 @@ public class DynamoDailyItem {
 
     public void setCreationTime(Instant creationTime) {
         this.creationTime = creationTime;
+    }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        DynamoDailyItem that = (DynamoDailyItem) o;
+        return Objects.equals(date, that.date) && Objects.equals(title, that.title) && Objects.equals(specific, that.specific) && Objects.equals(image, that.image) && Objects.equals(credit, that.credit) && Objects.equals(creditName, that.creditName) && Objects.equals(creationTime, that.creationTime);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(date, title, specific, image, credit, creditName, creationTime);
+    }
+
+    @Override
+    public String toString() {
+        return "DynamoDailyItem{" +
+                "date='" + date + '\'' +
+                ", title='" + title + '\'' +
+                ", specific='" + specific + '\'' +
+                ", image='" + image + '\'' +
+                ", credit='" + credit + '\'' +
+                ", creditName='" + creditName + '\'' +
+                ", creationTime=" + creationTime +
+                '}';
     }
 }

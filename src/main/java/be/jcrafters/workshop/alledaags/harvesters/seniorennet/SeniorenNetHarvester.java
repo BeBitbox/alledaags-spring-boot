@@ -1,4 +1,4 @@
-package be.jcrafters.workshop.alledaags.seniorennet;
+package be.jcrafters.workshop.alledaags.harvesters.seniorennet;
 
 import be.jcrafters.workshop.alledaags.core.DailyItem;
 import be.jcrafters.workshop.alledaags.core.Harvester;
@@ -39,7 +39,7 @@ public class SeniorenNetHarvester implements Harvester {
                     .withSpecific(text)
                     .build());
         } catch (Exception exception) {
-            LOGGER.error("Eror retrieving dailyItem on SeniorenNet for {}", localDate, exception);
+            LOGGER.error("Error retrieving dailyItem on SeniorenNet for {}", localDate, exception);
             return Optional.empty();
         }
     }
