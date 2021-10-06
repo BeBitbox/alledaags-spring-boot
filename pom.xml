@@ -5,10 +5,10 @@
 	<parent>
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
-		<version>2.2.13.RELEASE</version>
+		<version>2.5.5</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>be.j-crafters.workshop</groupId>
+	<groupId>be.bitbox</groupId>
 	<artifactId>alledaags</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>alledaags</name>
@@ -18,9 +18,9 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>11</java.version>
-		<aws-java-sdk.version>1.11.1024</aws-java-sdk.version>
-		<jsoup.version>1.14.2</jsoup.version>
-		<mockito-core.version>3.10.0</mockito-core.version>
+		<aws-java-sdk.version>1.12.81</aws-java-sdk.version>
+		<jsoup.version>1.14.3</jsoup.version>
+		<mockito-core.version>3.12.4</mockito-core.version>
 	</properties>
 
 	<dependencies>
