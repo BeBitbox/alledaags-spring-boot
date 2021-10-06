@@ -13,10 +13,10 @@
 * Compile the code locally
   * mvn clean install
 * Upload the JAR-file to S3
-  * you can use the interface https://s3.console.aws.amazon.com/s3/buckets/alledaags-folder/?region=eu-west-3&tab=overview
+  * you can use the interface https://s3.console.aws.amazon.com/s3/buckets/be.bitbox.alledaags/?region=eu-west-3&tab=overview
 * Download the JAR on the server
   * Login (see previous chapter)
-  * aws s3 cp s3://alledaags-folder/alledaags-0.0.1-SNAPSHOT.jar /opt/alledaags --region=eu-west-1
+  * aws s3 cp s3://be.bitbox.alledaags/alledaags-0.0.1-SNAPSHOT.jar . --region=eu-west-X
   * (optional) instal java: sudo yum install java-11
   * chmod 777 alledaags-0.0.1-SNAPSHOT.jar  
-  * java -jar alledaags-0.0.1-SNAPSHOT.jar   
+  * java -jar alledaags-0.0.1-SNAPSHOT.jar or install it as a Linux service   

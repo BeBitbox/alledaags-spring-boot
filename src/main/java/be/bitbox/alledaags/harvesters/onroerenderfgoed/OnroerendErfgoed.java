@@ -32,7 +32,7 @@ public class OnroerendErfgoed implements Harvester {
         try {
             var url = getUrl();
             var document = Jsoup.connect(url).get();
-            var childIndex = random.nextInt(10) + 3; // first one is header / second one is pagination
+            var childIndex = random.nextInt(10) + 2; // first one is header / second one is pagination
             LOGGER.info("looking for {} on URL {}, item {}", TITLE, url, childIndex);
             var article = document.select(".result-container").get(0).child(childIndex);
             var articleTitle = article.select("h3").text();
