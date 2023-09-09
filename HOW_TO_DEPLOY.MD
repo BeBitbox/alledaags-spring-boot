@@ -3,7 +3,7 @@
 ## Connection
 * SSH (Mac/Linux) or Git Bash (Windows)
   * Copy .PEM file to the machine from which you are going to connect.
-  * Make sure permissions on .PEM file are appropriate (chmod 600 file.pem)
+  * Make sure permissions on .PEM file are appropriate (chmod 400 file.pem)
   * Connect with ssh command: ssh ec2-user@ec2-xxxxxx.eu-west-3.compute.amazonaws.com -i alledaags_pem.pem
   
 * Putty (Windows)
@@ -17,6 +17,9 @@
 * Download the JAR on the server
   * Login (see previous chapter)
   * aws s3 cp s3://be.bitbox.alledaags/alledaags-0.0.1-SNAPSHOT.jar . --region=eu-west-X
-  * (optional) instal java: sudo yum install java-11
+  * (optional) instal java: 
+    * sudo rpm --import https://yum.corretto.aws/corretto.key
+    * sudo curl -L -o /etc/yum.repos.d/corretto.repo https://yum.corretto.aws/corretto.repo
+      * sudo yum install -y java-20-amazon-corretto-devel 
   * chmod 777 alledaags-0.0.1-SNAPSHOT.jar  
   * java -jar alledaags-0.0.1-SNAPSHOT.jar or install it as a Linux service   
