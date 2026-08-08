@@ -19,7 +19,7 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 		<java.version>20</java.version>
 		<aws-java-sdk.version>1.12.490</aws-java-sdk.version>
-		<jsoup.version>1.16.1</jsoup.version>
+		<jsoup.version>1.23.1</jsoup.version>
 		<mockito-core.version>5.4.0</mockito-core.version>
 	</properties>
 
